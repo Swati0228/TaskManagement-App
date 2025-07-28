@@ -1,0 +1,95 @@
+/* Root Container */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem;
+  text-align: center;
+  background-color: #f0f4f8; /* Soft background */
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Styling */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: filter 300ms ease, transform 300ms ease-in-out; 
+  will-change: filter, transform;
+  border-radius: 50%;
+  background-color: #fff; /* White background for logo */
+  border: 2px solid #ddd; /* Light border around the logo */
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em rgba(100, 204, 255, 0.6)); /* Lighter shadow */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* React logo hover effect */
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em rgba(97, 218, 251, 0.7)); /* Light blue shadow */
+}
+
+/* Logo Spin Animation */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Animation for logo spin */
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card Styling */
+.card {
+  padding: 2.5em;
+  background-color: #fff; /* White background */
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  margin: 2rem 0;
+  transition: transform 300ms ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slightly lift the card on hover */
+}
+
+/* Read the Docs Text */
+.read-the-docs {
+  color: #4f4f4f; /* Soft grey color */
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 1em 0;
+  display: inline-block;
+  border-bottom: 2px solid #61dafb; /* Subtle underline */
+  transition: color 300ms, border-color 300ms;
+}
+
+.read-the-docs:hover {
+  color: #61dafb; /* Light blue color on hover */
+  border-color: #4f4f4f; /* Darken underline color on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  #root {
+    padding: 1.5rem;
+  }
+
+  .logo {
+    height: 4.5em;
+    padding: 1em;
+  }
+
+  .card {
+    padding: 1.5em;
+  }
+}
