@@ -126,7 +126,7 @@ function Login() {
             </button> */}
 
             {/* OAuth Component (if used for Google Login) */}
-            <OAuth title={"Login with Google"} />
+            {/* <OAuth title={"Login with Google"} /> */}
           </form>
         </div>
       </div>
