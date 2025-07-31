@@ -58,8 +58,7 @@ A functional task management application built using the MERN (MongoDB, Express,
 
 ## 🌐 Live Demo
 
-🚧 **Coming Soon**  
-A live deployment link will be added shortly. Stay tuned!
+🚧 https://task-management-app-chi-orpin.vercel.app/
 
 ---
 
